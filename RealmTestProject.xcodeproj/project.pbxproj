@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13A949F2FF7D6233FCBE1B32 /* libPods-RealmTestProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF5E19AF94D10D3EF3911E1 /* libPods-RealmTestProject.a */; };
 		F223D6851F287332001BE1CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F223D6841F287332001BE1CF /* main.m */; };
 		F223D6881F287332001BE1CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F223D6871F287332001BE1CF /* AppDelegate.m */; };
 		F223D68B1F287332001BE1CF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F223D68A1F287332001BE1CF /* ViewController.m */; };
@@ -14,9 +15,15 @@
 		F223D6911F287332001BE1CF /* RealmTestProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F223D68F1F287332001BE1CF /* RealmTestProject.xcdatamodeld */; };
 		F223D6931F287332001BE1CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F223D6921F287332001BE1CF /* Assets.xcassets */; };
 		F223D6961F287332001BE1CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F223D6941F287332001BE1CF /* LaunchScreen.storyboard */; };
+		F223D6A41F287780001BE1CF /* ApartmentRLMObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F223D6A31F287780001BE1CF /* ApartmentRLMObject.m */; };
+		F223D6A61F2879C8001BE1CF /* Data.csv in Resources */ = {isa = PBXBuildFile; fileRef = F223D6A51F2879C8001BE1CF /* Data.csv */; };
+		F223D6A81F287C01001BE1CF /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F223D6A71F287C01001BE1CF /* libc++.1.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B7A303FE8B2A21B18D3C1039 /* Pods-RealmTestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmTestProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmTestProject/Pods-RealmTestProject.release.xcconfig"; sourceTree = "<group>"; };
+		CFF5E19AF94D10D3EF3911E1 /* libPods-RealmTestProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RealmTestProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E23E3B6477FE4C2BF5376CD1 /* Pods-RealmTestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmTestProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmTestProject/Pods-RealmTestProject.debug.xcconfig"; sourceTree = "<group>"; };
 		F223D6801F287332001BE1CF /* RealmTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F223D6841F287332001BE1CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F223D6861F287332001BE1CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -28,6 +35,10 @@
 		F223D6921F287332001BE1CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F223D6951F287332001BE1CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F223D6971F287332001BE1CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F223D6A21F287780001BE1CF /* ApartmentRLMObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApartmentRLMObject.h; sourceTree = "<group>"; };
+		F223D6A31F287780001BE1CF /* ApartmentRLMObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApartmentRLMObject.m; sourceTree = "<group>"; };
+		F223D6A51F2879C8001BE1CF /* Data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Data.csv; sourceTree = "<group>"; };
+		F223D6A71F287C01001BE1CF /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +46,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F223D6A81F287C01001BE1CF /* libc++.1.tbd in Frameworks */,
+				13A949F2FF7D6233FCBE1B32 /* libPods-RealmTestProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25FB9217BE304F99CFEC4437 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E23E3B6477FE4C2BF5376CD1 /* Pods-RealmTestProject.debug.xcconfig */,
+				B7A303FE8B2A21B18D3C1039 /* Pods-RealmTestProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F223D6771F287332001BE1CF = {
 			isa = PBXGroup;
 			children = (
 				F223D6821F287332001BE1CF /* RealmTestProject */,
 				F223D6811F287332001BE1CF /* Products */,
+				25FB9217BE304F99CFEC4437 /* Pods */,
+				FCF11280E90F581EFF01B232 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +88,8 @@
 				F223D6871F287332001BE1CF /* AppDelegate.m */,
 				F223D6891F287332001BE1CF /* ViewController.h */,
 				F223D68A1F287332001BE1CF /* ViewController.m */,
+				F223D6A21F287780001BE1CF /* ApartmentRLMObject.h */,
+				F223D6A31F287780001BE1CF /* ApartmentRLMObject.m */,
 				F223D68C1F287332001BE1CF /* Main.storyboard */,
 				F223D6921F287332001BE1CF /* Assets.xcassets */,
 				F223D6941F287332001BE1CF /* LaunchScreen.storyboard */,
@@ -77,9 +103,19 @@
 		F223D6831F287332001BE1CF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F223D6A51F2879C8001BE1CF /* Data.csv */,
 				F223D6841F287332001BE1CF /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FCF11280E90F581EFF01B232 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F223D6A71F287C01001BE1CF /* libc++.1.tbd */,
+				CFF5E19AF94D10D3EF3911E1 /* libPods-RealmTestProject.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,9 +125,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F223D69A1F287332001BE1CF /* Build configuration list for PBXNativeTarget "RealmTestProject" */;
 			buildPhases = (
+				518728C75FD24570743DF144 /* [CP] Check Pods Manifest.lock */,
 				F223D67C1F287332001BE1CF /* Sources */,
 				F223D67D1F287332001BE1CF /* Frameworks */,
 				F223D67E1F287332001BE1CF /* Resources */,
+				FA22029F97C669CA9D4477CE /* [CP] Embed Pods Frameworks */,
+				D9CF5074FB1235946EA010B7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -141,6 +180,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F223D6A61F2879C8001BE1CF /* Data.csv in Resources */,
 				F223D6961F287332001BE1CF /* LaunchScreen.storyboard in Resources */,
 				F223D6931F287332001BE1CF /* Assets.xcassets in Resources */,
 				F223D68E1F287332001BE1CF /* Main.storyboard in Resources */,
@@ -148,6 +188,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		518728C75FD24570743DF144 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D9CF5074FB1235946EA010B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmTestProject/Pods-RealmTestProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA22029F97C669CA9D4477CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmTestProject/Pods-RealmTestProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F223D67C1F287332001BE1CF /* Sources */ = {
@@ -157,6 +245,7 @@
 				F223D68B1F287332001BE1CF /* ViewController.m in Sources */,
 				F223D6911F287332001BE1CF /* RealmTestProject.xcdatamodeld in Sources */,
 				F223D6881F287332001BE1CF /* AppDelegate.m in Sources */,
+				F223D6A41F287780001BE1CF /* ApartmentRLMObject.m in Sources */,
 				F223D6851F287332001BE1CF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +364,7 @@
 		};
 		F223D69B1F287332001BE1CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E23E3B6477FE4C2BF5376CD1 /* Pods-RealmTestProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FAG24X2L6W;
@@ -287,6 +377,7 @@
 		};
 		F223D69C1F287332001BE1CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7A303FE8B2A21B18D3C1039 /* Pods-RealmTestProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FAG24X2L6W;
@@ -316,6 +407,7 @@
 				F223D69C1F287332001BE1CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

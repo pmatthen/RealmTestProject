@@ -1,0 +1,17 @@
+PODS:
+  - CHCSVParser (2.1.0)
+  - Realm (2.8.3):
+    - Realm/Headers (= 2.8.3)
+  - Realm/Headers (2.8.3)
+
+DEPENDENCIES:
+  - CHCSVParser (~> 2.1)
+  - Realm
+
+SPEC CHECKSUMS:
+  CHCSVParser: 3bcc7bdb72111a31222e95d57eacceefe4e537e8
+  Realm: 3601ef091c8c499a31101d8563b991e75546cdce
+
+PODFILE CHECKSUM: 86b8e173fb06f32b72c3b262c42cbbc447158d67
+
+COCOAPODS: 1.1.1
